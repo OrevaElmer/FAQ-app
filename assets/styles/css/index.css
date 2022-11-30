@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "laBelle";
+    src: url("../../fonts/LaBelleAurore-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightcyan;
+}
+.sec{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec .container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec .container .section-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container .question{
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
+    margin: 20px 0px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px #ccc;
+}
+.container .title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.container .title h3{
+    font-size: 1em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #444;
+}
+.container .title .btn{
+    appearance: none;
+    outline: none;
+    border: none;
+    color: goldenrod;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 1.2em;
+}
+.minusIcon{
+    display: none;
+}
+.container .title:hover .btn{
+    transform: rotate(-90deg);
+}
+.question .question-text{
+    position: relative;
+    padding: 20px 0px 10px;
+    border-top: 1px solid #444;
+    display: none;
+    transition: all .5s ease;
+}
+.question-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #666;
+    line-height: 1.5em;
+}
+.show-text .question-text{
+    display: block;
+    transition: all .5s ease;
+}
+.show-text .plusIcon{
+    display: none;
+}
+.show-text .minusIcon{
+    display: inline;
+}
